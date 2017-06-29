@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>1122留言板</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/message.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+</head>
+<body>
+
+<% include head.ejs %>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <% if(login){ %>
+        <div class="logined row">
+            <div class="logined_user col-xs-2 col-xs-offset-2">
+                <a href="/change"><img src="/<%= photo %>" alt=""></a>
+                <p><%= name %></p>
+            </div>
+            <div class="logined_content col-xs-6">
+                <textarea name="myMsg" id="myMsg" rows="7" class="form-control"></textarea>
+                <input type="button" name="reset" value="清空" class="btn btn-default">
+                <input type="button" name="submit" value="提交" class="btn btn-info submit">
+            </div>
+        </div>
+        <% }else{ %>
+        <div class="ban_left">
+            <h2>注册新用户</h2>
+            <p>欢迎使用1122留言板</p>
+            <p>如您没有账号，请先注册！</p>
+            <a class="btn btn-success" href="/regist">注册 >></a>
+        </div>
+        <div class="ban_right">
+            <h2>登录</h2>
+            <form id="formLog">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密&nbsp;码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码" name="pwd">
+                </div>
+                <input type="button" class="btn btn-default" value="登录" id="btn_log">
+            </form>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row main"> </div>
+    <div class="pageNum">
+        <%for(var i=1;i<=allData;i++){%><a class="btn btn-default" id="page<%= i %>"><%= i %></a><%}%>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+<script src="/js/underscore-min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/index.js"></script>
+</body>
+</html>

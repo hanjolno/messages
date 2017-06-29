@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>1122留言板</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/message.css" rel="stylesheet">
+    <link href="/login.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+</head>
+<body class="jumbotron">
+
+<% include head.ejs %>
+
+<div class="container">
+    <div class="ban_right">
+        <span class="nowchose" id="sp_log">登录</span>
+        <div class="show"  id="log">
+            <form id="formLog">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" name="name">
+                </div>
+                <p id="p_log_name">&nbsp;</p>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密&nbsp;码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码" name="pwd">
+                </div>
+                <p id="p_log_pwd">&nbsp;</p>
+                <input type="button" class="btn btn-default" value="登录" id="btn_log">
+            </form>
+        </div>
+        <div class="hide" id="reg">
+            <form id="formReg">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" name="name">
+                </div>
+                <p id="p_reg_name">&nbsp;</p>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密&nbsp;码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码" name="pwd">
+                </div>
+                <p id="p_reg_pwd">&nbsp;</p>
+                <input type="button" class="btn btn-default" value="注册" id="btn_reg">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+<script src="/js/bootstrap.js"></script>
+<script src="/login.js"></script>
+</body>
+</html>

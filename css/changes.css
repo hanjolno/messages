@@ -1,0 +1,6 @@
+#personInfo{
+    margin-top: 7rem;
+}
+#personInfo input:first-child{
+    display: none;
+}

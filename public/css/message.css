@@ -1,0 +1,39 @@
+.title{
+    color: white;
+}
+.login{
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.login .login_mid{
+    color: white;
+}
+.login a {
+    color: white;
+}
+.login a:hover{
+    font-weight: bold;
+}
+.active{
+    background-color: #0e0e0e;
+}
+.navbar .nav_li{
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+}
+.navbar .nav_li a{
+    font-size: 16px;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    line-height: 20px;
+    color: #9d9d9d;
+}
+.navbar .nav_li .active{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>上传头像</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/message.css" rel="stylesheet">
+    <link href="/allMember.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+</head>
+<body>
+
+<% include head.ejs %>
+<h2 class=" main">全部成员</h2>
+<div class="container">
+    <div class="row member">
+    <% for(var i=0;i<results.length;i++){ %>
+        <div class="col-xs-4 row">
+            <div class="col-xs-5">
+                <img src="/<%= results[i].photos %>" alt="">
+            </div>
+            <div class="col-xs-7">
+                <h3><%= results[i].name %></h3>
+                <h5>个人签名</h5>
+                <p><%= results[i].info %></p>
+            </div>
+        </div>
+    <% } %>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>

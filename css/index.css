@@ -1,0 +1,60 @@
+.logined{
+    margin-top: 4rem;
+}
+.logined_user{
+    text-align: center;
+    margin-top: 1rem;
+}
+.logined_user p{
+    margin-top: 1rem;
+}
+.logined_content textarea{
+    resize: none;
+    margin-bottom: 1rem;
+}
+.logined_content input{
+    margin-right: 1rem;
+}
+.jumbotron{
+    height: 30rem;
+}
+.ban_left{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 3%;
+}
+.ban_left p{
+    text-align: left;
+}
+.ban_right{
+    float: right;
+    width: 40%;
+}
+.ban_right form{
+    margin-top: 20px;
+}
+.main_div{
+    padding: 2rem;
+}
+.main_img{
+    border-radius: 50%;
+    width: 100%;
+}
+.main_name{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.main_content{
+    height: 135px;
+    position: relative;
+}
+.main_time{
+    color: #888;
+    position:absolute;
+    bottom:0px;
+    padding:0px;
+    margin:0px;
+    right: 0px;
+}

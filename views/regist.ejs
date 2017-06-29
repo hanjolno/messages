@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>1122留言板</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/message.css" rel="stylesheet">
+    <link href="/regist.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+</head>
+<body class="jumbotron">
+
+<% include head.ejs %>
+
+<div class="container">
+    <div class="ban_right row">
+        <span class="nowchose col-xs-4 col-xs-offset-3" id="sp_reg">注册</span>
+        <div class="reg_div col-xs-4 col-xs-offset-4" id="reg">
+            <form id="formReg">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">密&nbsp;码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码" name="pwd">
+                </div>
+                <p id="reg_msg"></p>
+                <input type="button" class="btn btn-default" value="注册" id="btn_reg">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+<script src="/js/bootstrap.js"></script>
+<script src="/regist.js"></script>
+</body>
+</html>

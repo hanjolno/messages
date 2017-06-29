@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header title">
+            <a class="navbar-brand" href="/">药代天团留言板</a>
+        </div>
+        <li class="nav_li">
+            <a class="<% if(active=="index"){%>active<%} %>" href="/">全部留言</a>
+        </li>
+        <% if(login=="1"){%>
+        <li class="nav_li">
+            <a class="<% if(active=="myMsg"){%>active<%} %> " href="/myMsg">我的留言</a>
+        </li>
+        <%}%>
+        <li class="nav_li">
+            <a class="<% if(active=="allMember"){%>active<%} %> " href="/allMember">成员列表</a>
+        </li>
+        <div id="navbar" class="navbar-collapse collapse">
+            <% if(login){ %>
+            <div class="login">
+                <a><%= name %></a><span class="login_mid"> / </span><a href="/logout">注销</a>
+            </div>
+            <% }else{ %>
+            <div class="login">
+                <a href="/login">登录</a> <span class="login_mid">/</span>
+                <a href="/regist">注册</a>
+            </div>
+            <% } %>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>

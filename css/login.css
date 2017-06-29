@@ -1,0 +1,28 @@
+.container{
+    height: 100%;
+}
+.ban_right{
+    float: right;
+    width: 35%;
+    margin-top: 50px;
+}
+.ban_right .g{
+    font-size: 30px;
+}
+.ban_right form{
+    margin-top: 20px;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+}
+.nowchose{
+    font-size: 30px;
+}
+.container p{
+    line-height:25px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #ac2925;
+}

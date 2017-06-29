@@ -1,0 +1,21 @@
+.ban_right{
+    margin-top: 4rem;
+}
+.nowchose{
+    font-size: 30px;
+    color: #953b39;
+}
+.reg_div{
+    margin-top: 1rem;
+}
+.reg_div label{
+    line-height: 3rem;
+}
+#reg_msg{
+    background-color: pink;
+    border: 1px solid #953b39;
+    color: #ac2925;
+    padding: 3px 10px;
+    font-size: 14px;
+    display: none;
+}
